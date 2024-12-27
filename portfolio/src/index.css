@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+}
+
+.transition-opacity {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.opacity-100 {
+    opacity: 1;
+}
+
+.translate-y-0 {
+    transform: translateY(0);
+}
+
+.duration-1000 {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+@keyframes move {
+    0% {
+        width: 30px;
+        left: -10px;
+    }
+
+    30% {
+        width: 140px;
+        left: -10px;
+    }
+
+    60% {
+        border-radius: 0px;
+        width: 30px;
+        left: -10px;
+        transform: rotate(0deg);
+    }
+
+    61% {
+        border-radius: 50%;
+    }
+
+    100% {
+        border-radius: 50%;
+        width: 30px;
+        left: 150px;
+        transform: rotate(360deg);
+    }
+}
+
+.animation-move {
+    animation: move 3s ease-out forwards;
+}
+
+@keyframes show {
+    0% {
+        width: 0px;
+    }
+
+    30% {
+        width: 130px;
+    }
+
+    100% {
+        width: 130px;
+    }
+}
+
+.animation-show {
+    animation: show 3s ease-out forwards;
+}
+
+
+@keyframes base {
+    0% {
+        width: 0px;
+        left: -10px;
+    }
+
+    30% {
+        width: 0px;
+        left: -10px;
+    }
+
+    60% {
+        width: 140px;
+        left: -10px;
+    }
+
+    90% {
+        width: 140px;
+        left: -10px;
+    }
+
+    100% {
+        width: 30px;
+        left: 0px;
+    }
+}
+
+.animation-base {
+    animation: base 3s ease-out forwards;
+}
+
+
+.svg-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.responsive-svg {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    } 40% {
+        transform: rotate(100deg);
+    } 80% {
+        transform: rotate(-100deg);
+    } 100% {
+        transform: rotate(0deg);
+    }
+}
+
+.animation-spin {
+    animation: spin 10s ease-in-out infinite;
+    animation-delay: 1s;
+}
