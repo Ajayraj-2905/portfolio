@@ -4,7 +4,7 @@ import profile from '../assets/profile.png'
 
 const Hero = () => {
     return (
-        <div id="hero" className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-5 px-5 pt-24 md:pt-0 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
+        <div id="hero" className="min-h-[680px] flex flex-col md:flex-row items-center justify-center gap-5 px-5 pt-24 md:pt-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
             <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -63,7 +63,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="flex gap-6 mt-8"
+                    className="flex flex-col sm:flex-row gap-6 mt-8 flex-wrap"
                 >
                     <a href="/Ajayraj-Resume.pdf" download className="px-6 py-3 bg-yellow-400 text-blue-900 font-bold rounded-lg shadow-md hover:bg-yellow-500 transition">
                         Download Resume
