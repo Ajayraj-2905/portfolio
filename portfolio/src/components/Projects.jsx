@@ -57,11 +57,11 @@ const Projects = () => {
     return (
         <FadeInSection id="projects">
             <div className="py-20 bg-gray-50">
-                <div className="container mx-auto px-4 md:px-6">
+                <div className="container mx-auto px-5">
                     <h2 className="text-4xl font-bold text-center text-blue-600 mb-10">Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projects.map((project) => (
-                            <div key={project.name} className="group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl 
+                            <div key={project.name} className="group bg-white p-5 rounded-lg shadow-lg hover:shadow-xl 
                             transition-all duration-300 transform hover:-translate-y-2 hover:bg-gradient-to-r from-blue-600 to-purple-600">
                                 <div className="border border-gray-500 group-hover:border-white rounded-lg">
                                     <img
