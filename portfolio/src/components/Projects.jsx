@@ -47,8 +47,8 @@ const Projects = () => {
         {
             name: "React Portfolio",
             description: "A modern portfolio showcasing my skills and projects with a contact page featuring email service.",
-            liveDemo: "#",
-            sourceCode: "#",
+            liveDemo: "https://myportfolio-theta-lime-55.vercel.app",
+            sourceCode: "https://github.com/Ajayraj-2905/portfolio",
             image: portfolio,
         },
     ];

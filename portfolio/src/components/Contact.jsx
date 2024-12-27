@@ -21,7 +21,7 @@ const Contact = () => {
         setStatus({ success: false, error: false, message: "" })
 
         try {
-            const response = await fetch("http://localhost:5000/api/sendMail", {
+            const response = await fetch("https://portfolio-37ak.onrender.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

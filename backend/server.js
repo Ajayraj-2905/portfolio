@@ -6,7 +6,7 @@ require('dotenv').config()
 
 const app = express()
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://myportfolio-theta-lime-55.vercel.app",
     methods: "GET,POST",
 }
 app.use(cors(corsOptions))
