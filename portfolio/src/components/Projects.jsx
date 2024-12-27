@@ -57,7 +57,7 @@ const Projects = () => {
     return (
         <FadeInSection id="projects">
             <div className="py-20 bg-gray-50">
-                <div className="container mx-auto px-6">
+                <div className="container mx-auto px-4 md:px-6">
                     <h2 className="text-4xl font-bold text-center text-blue-600 mb-10">Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projects.map((project) => (
@@ -71,15 +71,15 @@ const Projects = () => {
                                     />
                                 </div>
                                 <div className="mt-4 flex flex-col ">
-                                    <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">{project.name}</h3>
+                                    <h3 className="text-2xl font-semibold text-gray-800 group-hover:text-white transition">{project.name}</h3>
                                     <p className="mt-2 text-gray-600 group-hover:text-gray-200">{project.description}</p>
-                                    <div className="mt-4 flex space-x-4">
+                                    <div className="mt-4 flex gap-4">
                                         <a href={project.sourceCode} target="_blank" rel="noopener noreferrer"
-                                            className="px-4 py-2 text-sm font-semibold text-blue-600 bg-white border border-blue-600 rounded group-hover:border-white hover:bg-gray-100 group-hover:bg-white group-hover:text-blue-600 transition-all duration-300">
+                                            className="px-4 py-2 text-sm font-semibold text-blue-600 bg-white border border-blue-600 rounded group-hover:border-white hover:bg-gray-100 group-hover:bg-white group-hover:text-blue-600 transition">
                                             Source Code
                                         </a>
                                         <a href={project.liveDemo} target="_blank" rel="noopener noreferrer"
-                                            className="px-4 py-2 text-sm font-semibold text-white border border-blue-600 bg-blue-600 lg:bg-white lg:border-white rounded group-hover:border-gray-200 group-hover:text-blue-600 hover:bg-white hover:text-blue-600 transition-all duration-300">
+                                            className="px-4 py-2 text-sm font-semibold text-white border border-blue-600 bg-blue-600 lg:bg-white lg:border-white rounded group-hover:border-gray-200 group-hover:text-blue-600 hover:bg-white hover:text-blue-600 transition">
                                             Live Demo
                                         </a>
                                     </div>
