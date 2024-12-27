@@ -28,7 +28,7 @@ const Hero = () => {
                 <img src={profile} alt="my-profile" className='rounded-full object-cover' />
             </motion.div>
 
-            <div className='flex flex-col flex-1 items-center md:items-start p-4'>
+            <div className='flex flex-col flex-1 items-center md:items-start py-4 md:p-4'>
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
